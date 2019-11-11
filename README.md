@@ -1,2 +1,2 @@
 # dailyCodingProblem
-Java and C++ solution daily coding problems
+Java and C++ solution of daily coding problems
