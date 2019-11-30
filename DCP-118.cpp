@@ -18,18 +18,17 @@ int main()
 		cin>>A[i];
 	}
 	int ptrNeg = -1,ptrPos = N;
-	//set ptrNeg,
+	//set ptrPos,
 	for(int i=0;i<N;i++)
 	{
-		if(A[i] < 0)
+		if(A[i] >= 0)
 		{
-			ptrNeg = i;
+			ptrPos = i;
+			break;
 		}
 	}
-	if(ptrNeg>=0)
-	{
-		ptrPos = ptrNeg+1;
-	}
+	ptrNeg = ptrPos - 1;
+	
 	vector<int>ans(N,0);
 	int index = 0;
 	while(ptrNeg >= 0 && ptrPos < N)
